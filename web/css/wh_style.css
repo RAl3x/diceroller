@@ -1,0 +1,332 @@
+.characteristic {
+    background-image: url("../images/characteristic.png")
+}
+
+.conservative {
+    background-image: url("../images/conservative.png")
+}
+
+.reckless {
+    background-image: url("../images/reckless.png")
+}
+
+.challenge {
+    background-image: url("../images/challenge.png")
+}
+
+.expertise {
+    background-image: url("../images/expertise.png")
+}
+
+.fortune {
+    background-image: url("../images/fortune.png")
+}
+
+.misfortune {
+    background-image: url("../images/misfortune.png")
+}
+
+.successwhite {
+    background: #4D73C8;
+}
+
+.righteoussuccessblack {
+    background: #F0F611;
+}
+
+.challengewhite {
+    background: #67319A;
+}
+
+.banewhite {
+    background: #2B2B2B;
+}
+
+.boonblack {
+    background: #E6E6E6;
+}
+
+.chaoswhite {
+    background: #67319A;
+}
+
+.delayblack {
+    background: #498E29;
+}
+
+.exertionblack {
+    background: #B61F21;
+}
+
+.cometblack {
+    background: #F0F611;
+}
+
+.random {
+}
+
+.diebox {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    background-size: 48px 48px;
+    padding: 8px;
+    vertical-align: bottom
+}
+
+.total {
+    padding: 0px;
+    margin: 0px;
+    text-align: center
+}
+
+.monte {
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.totalitem {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    margin: 0px;
+    vertical-align: bottom
+}
+
+.monteitem {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    padding: 2px
+}
+
+.summary {
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px
+}
+
+.faded {
+    opacity: 0.25;
+}
+
+.footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    clear: both;
+}
+
+.titleedit {
+    width: 288px;
+    font-size: 20px;
+    text-align: center;
+    background: #ecede8;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.titleBox {
+    width: 99% !important;
+}
+
+.rollbutton {
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.resetbutton {
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-top: 8px;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.box {
+    background: #3E3E3E;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-shadow: 3px 3px 8px #888;
+    text-align: center;
+    width: 292px
+}
+
+.pip {
+    display: block;
+    margin: auto
+}
+
+.black {
+    color: #d7d7d7;
+    border: solid 1px #333;
+    background: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+    background: -moz-linear-gradient(top, #666, #000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+
+.black:hover {
+    background: #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+    background: -moz-linear-gradient(top, #444, #000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+
+.black:active {
+    color: #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+    background: -moz-linear-gradient(top, #000, #444);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}
+
+.right {
+    float: right;
+    width: 45%;
+}
+
+.left {
+    float: left;
+    width: 45%;
+}
+
+span.select {
+    display: block;
+    white-space: nowrap
+}
+
+img.select {
+    width: 48px;
+    height: 48px
+}
+
+body {
+    background: #F1F1F1;
+    margin: 0;
+    padding: 10px;
+}
+
+.form {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 175%;
+}
+
+.form input {
+    margin: auto;
+    width: 100%;
+}
+
+textarea {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.list {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.titlelist {
+    line-height: 200%;
+}
+
+
+#fade { /*--Masque opaque noir de fond--*/
+    display: none; /*--masqué par défaut--*/
+    background: #000;
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    opacity: .80;
+    z-index: 9999;
+}
+.popupBlock{
+    display: none; /*--masqué par défaut--*/
+    background: #fff;
+    padding: 20px;
+    border: 20px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 99999;
+    /*--Les différentes définitions de Box Shadow en CSS3--*/
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    /*--Coins arrondis en CSS3--*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+img.btn_close {
+    float: right;
+    margin: -55px -55px 0 0;
+}
+/*--Gérer la position fixed pour IE6--*/
+*html #fade {
+    position: absolute;
+}
+*html .popuBlock {
+    position: absolute;
+}
+
+input.error
+{
+    background: #fed; border: 1px solid red;
+}
+
+span.select {
+    display: block;
+    white-space: nowrap
+}

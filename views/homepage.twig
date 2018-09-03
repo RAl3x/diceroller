@@ -1,0 +1,33 @@
+{% extends "head.twig" %}
+
+{% block body %}
+    <body>
+
+    <input id="goToRoom" type="hidden">
+    <div id="baseURL" class="hidden">{{ baseURL }}</div>
+
+    <div class="form">
+        <form action="#" method="post">
+            {{ form_widget(form) }}
+            <br>
+            <button id="formSubmit" type="submit" name="submit">Go to the room</button>
+        </form>
+    </div>
+
+    <div class="list">
+        <span>Active rooms for the last day</span><br><br>
+        {% set value='_' %}
+        {% set with_value=' ' %}
+        {% for key, room in rooms %}
+            <span><a href="{{ app.request.baseUrl }}/room/{{ room }}" class="goToRoom" data-rel="askName">{{ room|replace({ (value): with_value }) }}</a></span><br>
+        {% endfor %}
+    </div>
+
+    <div id="askName" class="popupBlock">
+        <span>Please enter your name</span>
+        <input id="userName" type="text">
+        <button id="popupSubmit" type="submit" name="popupSubmit">Go to the room</button>
+    </div>
+    </body>
+
+{% endblock %}

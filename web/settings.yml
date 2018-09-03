@@ -1,0 +1,4 @@
+debug:  false
+base_url: /
+asset_path: localhost
+asset_port: 8080

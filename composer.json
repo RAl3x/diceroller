@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-0": {
+      "Room": "src/"
+    }
+  },
+    "require": {
+        "silex/silex": "~2.0",
+        "rpodwika/yaml-config-service-provider" : "dev-master",
+        "symfony/form": "^3.2",
+        "symfony/validator": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/translation": "^3.2",
+        "symfony/twig-bridge": "^3.2",
+        "monolog/monolog": "^1.22"
+    }
+}

@@ -1,0 +1,55 @@
+{% extends "head.twig" %}
+
+{% block body %}
+
+    <body onload="OnLoad()">
+
+    <div id="user" class="hidden">{{ user }}</div>
+    <div id="baseURL" class="hidden">{{ baseURL }}</div>
+    <div id="dice" class="hidden">{{ dice }}</div>
+
+    <div class="titleBox box" title="Title">
+        <span class="title">Welcome to room {{ room }}</span>
+    </div>
+    <div class="box left" title="Settings">
+        <span id="count0" class="select" title="Proficiency"></span>
+        <span id="count1" class="select" title="Ability"></span>
+        <span id="count2" class="select" title="Boost"></span>
+        <span id="count3" class="select" title="Challenge"></span>
+        <span id="count4" class="select" title="Difficulty"></span>
+        <span id="count5" class="select" title="Setback"></span>
+        <span id="count6" class="select" title="Force"></span>
+        {#<span class="select">#}
+            {#<input id="title" onkeyup="TitleChange()" onChange="TitleChange()" title="Label the collection"#}
+                {#class="titleedit">#}
+        {#</span>#}
+        <span class="select">
+         <script>
+            if (!queryParsed["montecarlo"]) document.write("<input type=\"button\" onclick=\"WheelRoll()\" class=\"rollbutton black\" title=\"Roll the dice\" value=\"ROLL\">");
+            else document.write("<input type=\"button\" onclick=\"WheelRoll()\" class=\"rollbutton black\" title=\"Generate probabilities\" value=\"GENERATE\">");
+        </script>
+        </span>
+    </div>
+    <div class="box right" id="spinnerBox" title="Roll">
+        <div id="spinner">
+            <div class="paddie"></div>
+        </div>
+    </div>
+    <div class="box right" id="Result" title="Result">
+        <div id="total">
+            <div class="padtotal"></div>
+        </div>
+    </div>
+    <div class="footer left">
+        To save settings, bookmark the page<br/>
+        <script>
+            if (!queryParsed["montecarlo"]) document.write("<a href=\"#\" onclick=\"MonteCarlo()\">Generate Probabilities</a>.");
+            else document.write("<a href=\"#\" onclick=\"RollNormal()\">Roll Normally</a>.");
+        </script>
+        <br>
+        <a href="http://rocknrolecircus.org" target="_blank">Feedback and Suggestions</a><br/>
+        <a href="http://game2.ca/eote/" target="_blank">Original credit game2</a>
+    </div>
+    </body>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "head.twig" %}
+
+{% block body %}
+
+    <body onload="OnLoad()">
+
+    <div id="user" class="hidden">{{ user }}</div>
+    <div id="baseURL" class="hidden">{{ baseURL }}</div>
+    <div id="dice" class="hidden">{{ dice }}</div>
+
+    <div class="titleBox box" title="Title">
+        <span class="title">Welcome to room {{ room }}</span>
+    </div>
+    <div class="box left">
+        <span id="count0" class="select"></span>
+        <span id="count1" class="select"></span>
+        <span id="count2" class="select"></span>
+        <span id="count3" class="select"></span>
+        <span id="count4" class="select"></span>
+        <span id="count5" class="select"></span>
+        <span id="count6" class="select"></span>
+        <span class="select">
+            <script>
+                if (!queryParsed["montecarlo"]) document.write("<input type=\"button\" onclick=\"WheelRoll()\" class=\"rollbutton black\" title=\"Roll the dice pool\" value=\"ROLL\">");
+                else document.write("<input type=\"button\" onclick=\"WheelRoll()\" class=\"rollbutton black\" title=\"Calculate probabilities\" value=\"CALCULATE\">");
+            </script>
+        </span>
+        <span class="select">
+            <input type="button" onclick="Reset()" class="resetbutton black" title="Reset the dice pool" value="RESET">
+        </span>
+    </div>
+
+    <div id="spinner" class="box right"></div>
+
+    <div id="message" class="box right"><input type="text"></div>
+
+    <div id="total" class="box right" style="display:none"></div>
+
+    <div class="footer left">
+        To save settings, bookmark the page<br/>
+        <script>
+            if (queryParsed["montecarlo"] || queryParsed["random"]) document.write("<a href=\"#\" onclick=\"RollNormal()\">Roll Normally</a><br/>");
+            if (!queryParsed["random"]) document.write("<a href=\"#\" onclick=\"UseRandom()\">Roll using RANDOM.ORG</a><br/>");
+            if (!queryParsed["montecarlo"]) document.write("<a href=\"#\" onclick=\"MonteCarlo()\">Calculate Probabilities</a><br/>");
+        </script>
+        <a href="http://rocknrolecircus.org" target="_blank">Feedback and Suggestions</a><br/>
+        <!--<script>
+            if (document.location.href.indexOf("file:") == -1) document.write("<a href=\"http://wfrp3-dice.dertarr.info/offline/wfrp3-dice.zip\" target=\"_blank\">Download Offline Version</a><br/>");
+        </script>-->
+        <a href="http://www.theforbiddentome.com" target="_blank">Original credit to the today gone forbidden
+            tome...</a>
+    </div>
+    </body>
+
+{% endblock %}

